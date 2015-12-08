@@ -1,0 +1,78 @@
+<!doctype html>
+<html ng-app="events">
+  <head>
+    <title>SharedList - Events</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./css/stylesheets.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+
+  <body ng-controller="EventsController">
+    <div class="main">
+      <h1>[POC] - SharedList - Events FB</h1>
+
+      <div class="content-button">
+        <button ng-click="showEvents()" type="button" class="list-btn small blue">Get the facebook event</button>
+      </div>
+
+      <form>
+        <div class="form-group" ng-if="event.cover">
+          <label>Cover:</label>
+          <img ng-src="{{ event.cover.source }}" alt="">
+        </div>
+
+        <div class="form-group">
+          <label>Name:</label>
+          <input class="form-control" type="text" ng-model="event.name">
+        </div>
+
+        <div class="form-group">
+          <label>Description:</label>
+          <textarea class="form-control" ng-model="event.description"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Start Time:</label>
+          <input class="form-control" type="text" ng-model="event.start_time">
+        </div>
+
+        <div class="form-group">
+          <label>End Time:</label>
+          <input class="form-control" type="text" ng-model="event.end_time">
+        </div>
+
+        <div class="form-group">
+          <label>Interested Count:</label>
+          <input class="form-control" type="text" ng-model="event.interested_count">
+        </div>
+      </form>
+
+      <div class="modal" ng-if="showModal">
+        <div class="modal-content">
+          <h3>Select your event</h3>
+          <ul>
+            <li ng-repeat="event in events" ng-click="selectEvent(event)">{{ event.name }}</li>
+          </ul>
+        </div>
+        <div class="modal-mask" ng-click="hideModal()"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: '172982716387064',
+          version: 'v2.5'
+        });
+      };
+    </script>
+
+    <script src="//connect.facebook.net/en_US/sdk.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.8/angular.js"></script>
+
+    <script src="./js/fb.js"></script>
+    <script src="./js/events.js"></script>
+  </body>
+</html>

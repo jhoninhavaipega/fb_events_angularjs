@@ -1,0 +1,22 @@
+{
+  "name": "fb_events",
+  "version": "1.0.0",
+  "description": "POC to catch facebook events",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "0.10.38"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-iife": "^0.2.4",
+    "gulp-sass": "^2.1.0",
+    "gulp-watch": "^4.3.5"
+  }
+}

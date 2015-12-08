@@ -1,0 +1,151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/jhsilva/.nvm/v0.10.38/bin/node',
+1 verbose cli   '/Users/jhsilva/.nvm/v0.10.38/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 warn package.json fb_events@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/jhsilva/workspace/walmart/poc/fb_events',
+6 verbose install   [ 'node',
+6 verbose install     'npm',
+6 verbose install     'express',
+6 verbose install     'gulp',
+6 verbose install     'gulp-concat',
+6 verbose install     'gulp-iife',
+6 verbose install     'gulp-sass',
+6 verbose install     'gulp-watch' ] ]
+7 info preinstall fb_events@1.0.0
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'node@v0.10.38', null ]
+10 verbose cache add name=undefined spec="node@v0.10.38" args=["node@v0.10.38",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'node@v0.10.38',
+11 verbose parsed url   path: 'node@v0.10.38',
+11 verbose parsed url   href: 'node@v0.10.38' }
+12 verbose cache add [ 'npm@1.4.28', null ]
+13 verbose cache add name=undefined spec="npm@1.4.28" args=["npm@1.4.28",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'npm@1.4.28',
+14 verbose parsed url   path: 'npm@1.4.28',
+14 verbose parsed url   href: 'npm@1.4.28' }
+15 verbose already installed skipping express@^4.13.3 /Users/jhsilva/workspace/walmart/poc/fb_events
+16 verbose already installed skipping gulp@^3.9.0 /Users/jhsilva/workspace/walmart/poc/fb_events
+17 verbose already installed skipping gulp-concat@^2.6.0 /Users/jhsilva/workspace/walmart/poc/fb_events
+18 verbose already installed skipping gulp-iife@^0.2.4 /Users/jhsilva/workspace/walmart/poc/fb_events
+19 verbose cache add name="node" spec="v0.10.38" args=["node","v0.10.38"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'v0.10.38',
+20 verbose parsed url   path: 'v0.10.38',
+20 verbose parsed url   href: 'v0.10.38' }
+21 verbose addNamed [ 'node', 'v0.10.38' ]
+22 verbose addNamed [ '0.10.38', '0.10.38' ]
+23 verbose cache add name="npm" spec="1.4.28" args=["npm","1.4.28"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '1.4.28',
+24 verbose parsed url   path: '1.4.28',
+24 verbose parsed url   href: '1.4.28' }
+25 verbose addNamed [ 'npm', '1.4.28' ]
+26 verbose addNamed [ '1.4.28', '1.4.28' ]
+27 verbose already installed skipping gulp-sass@^2.1.0 /Users/jhsilva/workspace/walmart/poc/fb_events
+28 silly lockFile 52a0c10b-node-v0-10-38 node@v0.10.38
+29 verbose lock node@v0.10.38 /Users/jhsilva/.npm/52a0c10b-node-v0-10-38.lock
+30 silly lockFile 2e10e49c-npm-1-4-28 npm@1.4.28
+31 verbose lock npm@1.4.28 /Users/jhsilva/.npm/2e10e49c-npm-1-4-28.lock
+32 verbose already installed skipping gulp-watch@^4.3.5 /Users/jhsilva/workspace/walmart/poc/fb_events
+33 verbose request where is /node
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id 9ebd60abef4f4817
+36 verbose url raw /node
+37 verbose url resolving [ 'https://registry.npmjs.org/', './node' ]
+38 verbose url resolved https://registry.npmjs.org/node
+39 verbose request where is https://registry.npmjs.org/node
+40 info trying registry request attempt 1 at 11:17:01
+41 verbose etag "4RB0I162TMBFF7IWMPCBRMD3L"
+42 http GET https://registry.npmjs.org/node
+43 verbose request where is /npm
+44 verbose request registry https://registry.npmjs.org/
+45 verbose url raw /npm
+46 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
+47 verbose url resolved https://registry.npmjs.org/npm
+48 verbose request where is https://registry.npmjs.org/npm
+49 info trying registry request attempt 1 at 11:17:01
+50 verbose etag "9SSYN233N45PUMETGRJUX96VM"
+51 http GET https://registry.npmjs.org/npm
+52 http 304 https://registry.npmjs.org/npm
+53 silly registry.get cb [ 304,
+53 silly registry.get   { date: 'Wed, 09 Dec 2015 13:17:01 GMT',
+53 silly registry.get     via: '1.1 varnish',
+53 silly registry.get     'cache-control': 'max-age=60',
+53 silly registry.get     etag: '"9SSYN233N45PUMETGRJUX96VM"',
+53 silly registry.get     age: '0',
+53 silly registry.get     connection: 'keep-alive',
+53 silly registry.get     'x-served-by': 'cache-atl6235-ATL',
+53 silly registry.get     'x-cache': 'HIT',
+53 silly registry.get     'x-cache-hits': '1',
+53 silly registry.get     'x-timer': 'S1449667021.023440,VS0,VE43',
+53 silly registry.get     vary: 'Accept' } ]
+54 verbose etag https://registry.npmjs.org/npm from cache
+55 http 304 https://registry.npmjs.org/node
+56 silly registry.get cb [ 304,
+56 silly registry.get   { date: 'Wed, 09 Dec 2015 13:17:01 GMT',
+56 silly registry.get     via: '1.1 varnish',
+56 silly registry.get     'cache-control': 'max-age=60',
+56 silly registry.get     etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+56 silly registry.get     age: '0',
+56 silly registry.get     connection: 'keep-alive',
+56 silly registry.get     'x-served-by': 'cache-atl6231-ATL',
+56 silly registry.get     'x-cache': 'HIT',
+56 silly registry.get     'x-cache-hits': '1',
+56 silly registry.get     'x-timer': 'S1449667021.054715,VS0,VE96',
+56 silly registry.get     vary: 'Accept' } ]
+57 verbose etag https://registry.npmjs.org/node from cache
+58 silly lockFile 52a0c10b-node-v0-10-38 node@v0.10.38
+59 silly lockFile 52a0c10b-node-v0-10-38 node@v0.10.38
+60 silly lockFile 2e10e49c-npm-1-4-28 npm@1.4.28
+61 silly lockFile 2e10e49c-npm-1-4-28 npm@1.4.28
+62 error Error: version not found: node@0.10.38
+62 error     at /Users/jhsilva/.nvm/v0.10.38/lib/node_modules/npm/lib/cache/add-named.js:125:12
+62 error     at saved (/Users/jhsilva/.nvm/v0.10.38/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+62 error     at Object.oncomplete (fs.js:108:15)
+63 error If you need help, you may report this *entire* log,
+63 error including the npm and node versions, at:
+63 error     <http://github.com/npm/npm/issues>
+64 error System Darwin 15.0.0
+65 error command "/Users/jhsilva/.nvm/v0.10.38/bin/node" "/Users/jhsilva/.nvm/v0.10.38/bin/npm" "install"
+66 error cwd /Users/jhsilva/workspace/walmart/poc/fb_events
+67 error node -v v0.10.38
+68 error npm -v 1.4.28
+69 verbose exit [ 1, true ]
